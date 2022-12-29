@@ -9,12 +9,12 @@ let combinaisons = ''
 let combine =()=>{
     for (let i = 0; i <= max; i++) {
        for (let j=0; j<= max; j++) {
-        let nb1=`${i}${j}`
+        let nb1=`${i}${j}`                      // on crée le premier nombre
            for(let k=0; k<=max; k++){
             for(let l=0; l<=max; l++){
-                let nb2=`${k}${l}`
+                let nb2=`${k}${l}`              // on crée le second
                 if (nb1!=nb2 && nb1<nb2) {
-                    combinaisons +=`${nb1} ${nb2}, `
+                    combinaisons +=`${nb1} ${nb2}, ` // on ajoute les nombres dans notre réponse/combinaisons
                 }
             }
            }
@@ -27,7 +27,7 @@ let combine =()=>{
 let testerror= () =>{
     if (arg) {
         console.log("pas besoin d'argument ici")
-        process.exit()
+        process.exit()                            // permet d'arrêter le programme (un peu comme un break dans une boucle?)
     } 
 }
 
