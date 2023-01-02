@@ -4,6 +4,7 @@
 
 // mes variables 
 let arg = process.argv[2]
+let excedent = process.argv[3]
 let fibo = [0,1,1,2]
 
 //Mes fonctions
@@ -28,6 +29,9 @@ let error=(arg) => {
         process.exit()
     } else if (isNaN(arg)) {
         console.log("Il faut entrer UN NOMBRE !")
+        process.exit()
+    } else if (!isNaN(excedent)) {
+        console.log("Un seul nombre suffira :) ")
         process.exit()
     }
 }
