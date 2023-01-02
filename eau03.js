@@ -4,20 +4,19 @@
 
 // mes variables 
 let arg = process.argv[2]
-let excedent = process.argv[3]
+let excedent = process.argv[3]                      // une variable pour check si plus d'un element
 let fibo = [0,1,1,2]
 
 //Mes fonctions
 let creatfibo = (arg) => {
-    let n
-    if(arg<=fibo.length) {
+
+    if(arg<fibo.length) {
         console.log(fibo[arg])
     } else {
-            for (let i = 4 ; i<=arg ; i++) {
+        for (let i = 4 ; i<=arg ; i++) {
             let n=fibo[i-1]+fibo[i-2]
             fibo.push(n)
-
-        }
+            }
         console.log(fibo[arg])
     }
 }
