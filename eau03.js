@@ -5,15 +5,15 @@
 // mes variables 
 let arg = process.argv[2]
 let excedent = process.argv[3]                      // une variable pour check si plus d'un element
-let fibo = [0,1,1,2]
+let fibo = [0,1,1,2]                                // début suite fibonacci
 
 //Mes fonctions
 let creatfibo = (arg) => {
 
-    if(arg<fibo.length) {
+    if(arg<fibo.length) {                           
         console.log(fibo[arg])
     } else {
-        for (let i = 4 ; i<=arg ; i++) {
+        for (let i = 4 ; i<=arg ; i++) {            // onconstruit la suite de fibonacci au fur et a mesure, jusqu'a l'index transmit par l'argument
             let n=fibo[i-1]+fibo[i-2]
             fibo.push(n)
             }
