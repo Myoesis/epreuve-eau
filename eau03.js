@@ -23,14 +23,8 @@ let creatfibo = (arg) => {
 
 // Vérifier les erreurs
 let error=(arg) => {
-    if (!arg) {
-        console.log("Il faut entrer un nombre")
-        process.exit()
-    } else if (isNaN(arg)) {
-        console.log("Il faut entrer UN NOMBRE !")
-        process.exit()
-    } else if (!isNaN(excedent)) {
-        console.log("Un seul nombre suffira :) ")
+    if (!arg || isNaN(arg) || !isNaN(excedent)  || arg<0) {
+        console.log("-1")
         process.exit()
     }
 }
