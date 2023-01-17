@@ -12,20 +12,22 @@ let arg3=process.argv[4]
 
 //Mes fonctions
 let stringInString=(arg1,arg2)=> {
-   if (!error(arg1) || !error(arg2) || arg3!== undefined) { // vérifier s'il y a des erreurs sur mes arguments.
+   if (!error(arg1) || !error(arg2) || arg3!== undefined) { 
     console.log ("error")
     process.exit()
    }
-    for (let j=0 ; j<arg2.length ; j++) { 
-        let index = arg1.indexOf(arg2[0])            // définir l'index, dans le premier argument, de la première lettre du second argument.
-        if (arg2[j]!=arg1.slice(index)[j]) {         // vérifier a partir de l'index, lettre par lettre si ça concorde. sinon, exit.
-            console.log("false")
-            process.exit()
-        }
-    } console.log("true")                            // si jusquau bout ça colle, return true 
+    
+    let index = arg1.indexOf(arg2[0]) 
+
+   while ( index!=-1) {
+    if (arg2 === arg1.slice(index , index + arg2.length)) {
+        console.log("true")
+        process.exit()
+    } 
+    index ++
+ 
+} console.log("false")
 }
-
-
 
 
 
