@@ -17,16 +17,16 @@ let stringInString=(arg1,arg2)=> {
     process.exit()
    }
     
-    let index = arg1.indexOf(arg2[0]) 
+    let index = arg1.indexOf(arg2[0])                               // créer le premier index à partir duquel chercher
 
-   while ( index!=arg1.length) {                                      
-    if (arg2 === arg1.slice(index , index + arg2.length)) {
+   while ( index!=arg1.length) {                                      // tant que l'index est différent de la longeure de arg1, on cherche à trouver une correspondance
+    if (arg2 === arg1.slice(index , index + arg2.length)) {           // on slice pour créer une chaine de caractère à comparer
         console.log("true")
         process.exit()
     } 
     index ++
  
-} console.log("false")
+} console.log("false")                                                 // si pas de comparaisons possible, c'est "false"
 }
 
 
