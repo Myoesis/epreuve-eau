@@ -19,7 +19,7 @@ let stringInString=(arg1,arg2)=> {
     
     let index = arg1.indexOf(arg2[0]) 
 
-   while ( index!=-1) {
+   while ( index!=arg1.length) {                                      
     if (arg2 === arg1.slice(index , index + arg2.length)) {
         console.log("true")
         process.exit()
