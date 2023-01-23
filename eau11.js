@@ -35,7 +35,7 @@ let error = () => {
         }
     } 
     if (process.argv[2]== undefined) {
-        console.log("error")
+        console.log("error")                           // j'avais essayé de rentrer cette condition dans la boucle, mais ca ne marchait pas. Pourquoi?
         process.exit()
     }
     }
