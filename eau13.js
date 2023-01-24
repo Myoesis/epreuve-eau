@@ -20,7 +20,19 @@ let my_select_sort = (array) => {
 }
 
 // Vérifier les erreurs
-
+let error = () => {
+    for (let i=0 ; i<arg.length ; i++) {
+        if (isNaN(parseInt(arg[i]))) {
+            console.log("error")
+            process.exit()
+        }
+    } 
+    if (process.argv[2]== undefined) {
+        console.log("error")                          
+        process.exit()
+    }
+    }
 
 // appeler mon résultat
+error(arg)
 my_select_sort(arg)
