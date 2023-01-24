@@ -1,4 +1,15 @@
-// consigne : Créez un programme qui affiche la différence minimum absolue entre deux éléments d’un tableau constitué uniquement de nombres.
+// consigne : Créez un programme qui affiche la différence minimum absolue entre deux éléments d’un tableau constitué uniquement de nombres.let error = () => {
+    for (let i=0 ; i<argArray.length ; i++) {
+        if (isNaN(parseInt(argArray[i]))) {
+            console.log("error")
+            process.exit()
+        }
+    } 
+    if (process.argv[2]== undefined) {
+        console.log("error")                           // j'avais essayé de rentrer cette condition dans la boucle, mais ca ne marchait pas. Pourquoi?
+        process.exit()
+    }
+    
 // Nombres négatifs acceptés.
 
 // mes variables 
@@ -27,18 +38,7 @@ let compare = () => {
 }
 // Vérifier les erreurs
 
-let error = () => {
-    for (let i=0 ; i<argArray.length ; i++) {
-        if (isNaN(parseInt(argArray[i]))) {
-            console.log("error")
-            process.exit()
-        }
-    } 
-    if (process.argv[2]== undefined) {
-        console.log("error")                           // j'avais essayé de rentrer cette condition dans la boucle, mais ca ne marchait pas. Pourquoi?
-        process.exit()
-    }
-    }
+
 
 // appeler mon résultat
 error()

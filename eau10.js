@@ -7,7 +7,7 @@ let argArray=[]
 
 
 //Mes fonctions
-let countArray = () => {
+let creatArray = () => {
     let i=2
     while (process.argv[i] !== undefined) {
         argArray.push(process.argv[i])
@@ -35,5 +35,5 @@ let error =()=> {
 
 // appeler mon résultat
 error()
-countArray()
+creatArray()
 indexWanted()
