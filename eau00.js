@@ -6,11 +6,13 @@
 //   2.1 - dans chaque trio, les chiffres sont différents. (pas de 121 par ex)
 const limit=9
 let combinaison =('')
+const arg=process.argv[2]
 
 
 // gestion des erreurs (si un argument est présent)
 if (arg) {
     console.log("pas besoin d'argument")
+    process.exit()
 } 
 
 
