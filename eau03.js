@@ -3,7 +3,7 @@
 // Une fonction pour créer la suite de fibonnaci dans un tableau (n=n-1 + n-2) (arreter la fonction quand on arrive à l'index demandé, et afficher le dernier element du tableau)
 
 // mes variables 
-let arg = process.argv[2]
+let arg = process.argv[2]                           // arg représente l'index de la suite de fibo que l'on recherche
 let excedent = process.argv[3]                      // une variable pour check si plus d'un element
 let fibo = [0,1,1,2]                                // début suite fibonacci
 
