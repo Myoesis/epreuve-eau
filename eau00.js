@@ -4,7 +4,6 @@
 // 1 - créer une variable qui va contenir les différents qui sont ok
 // 2 - créer une fonction qui check les nombres un par un ( boucle de 000 à 999 ? NON --> boucles imbriquées )
 //   2.1 - dans chaque trio, les chiffres sont différents. (pas de 121 par ex)
-const arg = process.argv[2]
 const limit=9
 let combinaison =('')
 
