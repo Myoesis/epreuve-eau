@@ -8,9 +8,10 @@ let finalQuote =""
 
 //Mes fonctions
 let upperAndLower =(string) => {
-    let j=0                                                // j va nous permettre de transformer les lettres indifféremment des espaces
+    let j=0                                                // j va nous permettre de transformer les lettres indifféremment des espaces 
+    let regex=/[\s,\.,\n]/;
     for ( let i=0 ; i< string.length ; i++) {                
-        if (string[i]=== " ") {                            // si un caractère est un espace => pas d'incrméentation de j
+        if (regex.test(string[i])) {                            // si un caractère est un espace => pas d'incrméentation de j
             finalQuote += " "
         } else if (j%2 === 0 ) {
             finalQuote += string[i].toLowerCase() 
